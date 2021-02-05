@@ -1,0 +1,30 @@
+main {
+    font-family: "Times New Roman";
+    text-align: center;
+}
+
+p {
+    color: cornflowerblue;
+}
+
+.about {
+    background: lightgrey;
+    padding: 8px;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+}
+
+.column {
+    float: left;
+    margin-right: 16px;
+    margin: 10px;
+    width: 23%;
+}
+
+.card {
+    box-shadow: 0px 4px 8px 0 #b3b3b3f5;
+    padding: 0 16px 0 16px;
+}
