@@ -30,7 +30,7 @@ if(isset($_POST['signup-submit']))
         {
             mysqli_stmt_bind_param($stmt, "s", $username);
             mysqli_stmt_execute($stmt);
-            mysqli_stmt_result($stmt);
+            mysqli_stmt_store_result($stmt);
             $check = mysqli_stmt_num_rows($stmt);
 
             if($check > 0)
@@ -52,7 +52,7 @@ if(isset($_POST['signup-submit']))
                     $hashed = password_hash($passw, PASSWORD_BCRYPT);
                     mysqli_stmt_bind_param($stmt, "sssss", $lname, $fname, $email, $username, $hashed);
                     mysqli_stmt_execute($stmt);
-                    mysqli_stmt_result($stmt);
+                    mysqli_stmt_store_result($stmt);
                     echo "<h1>.$fname.</h1>";
 
                     $sqlImg = "INSERT INTO profiles (uname, fname) VALUES ('$username', '$fname')";
