@@ -3,3 +3,16 @@
     justify-content: center;
     padding: 40px;
 }
+
+#prof-display {
+    display: block;
+    width: 100px;
+    margin: 50px auto;
+    border-radius: 100%;
+}
+
+#uname-style {
+    font-size: 20px;
+    font-family: "Arial Narrow", sans-serif;
+    font-weight: bold;
+}

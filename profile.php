@@ -20,7 +20,7 @@ require 'includes/dbhandler.php';
     }
     </script>
     <?php
-if(issset($_SESSION['uid'])){
+if(isset($_SESSION['uid'])){
     //assuming they are logged in, create prof user
     //username after login
     $prof_user = $_SESSION['uname'];
